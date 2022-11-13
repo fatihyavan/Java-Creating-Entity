@@ -8,6 +8,9 @@ import javax.persistence.Table;
 @Entity
 public class Doctor {
 
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Long id;
     @Column(name = "Name",length = 20)
     private String name;
 
@@ -23,6 +26,10 @@ public class Doctor {
     public Doctor(String name, Integer salary) {
         this.name = name;
         this.salary = salary;
+    }
+
+    public Long getId() {
+        return id;
     }
 
     public String getName() {

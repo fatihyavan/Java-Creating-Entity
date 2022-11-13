@@ -59,13 +59,20 @@ public class InsertTest {
         assertTrue(persisted);
     }
 
-   /* @Test
-    public void insertSong() {
+    @Test
+    public void insertPatient() {
 
-        Song song = new Song();
-        song.setId(2L);
+        Patient patient = new Patient();
+        boolean persisted = persistInATransaction(patient);
+        assertTrue(persisted); //
+    }
 
-        boolean persisted = persistInATransaction(song);
-        assertTrue(persisted); // "Song" adında bir tablo yok
-    } */
+    @Test
+    public void insertPolyclinic() {
+
+        Polyclinic polyclinic = new Polyclinic();
+        boolean persisted = persistInATransaction(polyclinic);
+        assertTrue(persisted); //
+    }
+
 }

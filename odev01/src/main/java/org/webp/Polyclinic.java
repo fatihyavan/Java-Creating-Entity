@@ -15,6 +15,9 @@ public class Polyclinic {
     @Column(name = "Number of pation",length = 5)
     private Long numberOfPation;
 
+     @OneToOne
+     private Doctor doctor;
+
     public Polyclinic(){
     }
 

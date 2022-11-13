@@ -14,6 +14,9 @@ public class Doctor {
     @Column(name = "Salary")
     private Integer salary;
 
+    @OneToMany
+    private Patient patient;
+
     public Doctor(){
     }
 
@@ -36,5 +39,13 @@ public class Doctor {
 
     public void setSalary(Integer salary) {
         this.salary = salary;
+    }
+
+    public Patient getPatient() {
+        return patient;
+    }
+
+    public void setPatient(Patient patient) {
+        this.patient = patient;
     }
 }

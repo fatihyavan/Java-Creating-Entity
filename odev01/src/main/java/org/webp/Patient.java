@@ -19,6 +19,9 @@ public class Patient {
     @Column(name = "Medicine")
     private String medicine;
 
+    @ManyToOne
+    private Doctor doctor;
+
     public Patient(){
     }
 

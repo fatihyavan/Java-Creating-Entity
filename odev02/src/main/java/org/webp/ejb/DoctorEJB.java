@@ -1,6 +1,7 @@
 package org.webp.ejb;
 
 import org.webp.entity.Doctor;
+import org.webp.entity.Patient;
 
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -19,9 +20,14 @@ public class DoctorEJB {
         if(isEmployee(name)){
             return;
         }
+
+        PatientEJB patientejb = new PatientEJB();
+        Patient patient = patientejb.getPatientById(id);
+
         Doctor doctor = new Doctor();
         doctor.setName(name);
         doctor.setSalary(salary);
+        doctor.setPatient(patient);
 
         entityManager.persist(doctor);
     }

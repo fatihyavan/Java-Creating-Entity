@@ -1,6 +1,0 @@
-org/webp/entity/Polyclinic.class
-org/webp/entity/Patient.class
-org/webp/ejb/PatientEJB.class
-org/webp/ejb/DoctorEJB.class
-org/webp/entity/Doctor.class
-org/webp/ejb/PolyclinicEJB.class

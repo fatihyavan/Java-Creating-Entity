@@ -1,3 +1,1 @@
-Öğrenci Numarası: 1030510091
-Öğrenci Adı: Fatih Yavan
-Ders Adı: BS435 Web Programlama
+This project about creating entity with Spring Framework.
